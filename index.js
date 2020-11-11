@@ -8,9 +8,7 @@ const app = express();
 const httpserver = http.Server(app);
 const io = socketio(httpserver);
 
-const gamedirectory = path.join(__dirname, "html");
-
-app.use(express.static(gamedirectory));
+app.use(express.static("/home/runner/poopcord"));
 
 httpserver.listen(3000);
 
